@@ -1,0 +1,43 @@
+version: '3'
+services:
+    users:
+        build:
+            context: ./GraphQLUserService
+        image: graphqlusers
+        ports:
+            - "8081:80"
+            - "4444:443"
+    products:
+        build:
+            context: ./GraphQLProductService
+        image: graphqlproducts
+        ports:
+            - "8082:80"
+            - "4445:443"
+    baskets:
+        build:
+            context: ./GraphQLBasketService
+        image: graphqlbaskets
+        ports:
+            - "8083:80"
+            - "4446:443"
+    graphql-gateway:
+       # build:
+       #     context: ./GraphQLGateway
+        image: graphql/gateway
+        links:
+            - baskets
+            - users
+            - products
+        ports:
+            - 8080:80
+        environment:
+             - GRAPHQL_URL_0=http://users/graphql
+             - GRAPHQL_URL_1=http://products/graphql
+             - GRAPHQL_URL_2=http://baskets/graphql
+
+            # - GRAPHQL_URL_2=http://host.docker.internal:59673/graphql
+            # - GRAPHQL_URL_0=http://host.docker.internal:4001/graphql
+            # - GRAPHQL_URL_1=http://host.docker.internal:4002/graphql
+            # - GRAPHQL_URL_2=http://host.docker.internal:4003/graphql
+            # - GRAPHQL_URL_3=http://host.docker.internal:4004/graphql
