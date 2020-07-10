@@ -48,7 +48,7 @@ namespace GraphQLBasketService
 
         public System.Threading.Tasks.Task<Basket> GetBasketById(string Id)
         {
-            return Task.FromResult(baskets[0]);
+            return Task.FromResult(baskets.FirstOrDefault(x => x.id == Id));
         }
 
     }
