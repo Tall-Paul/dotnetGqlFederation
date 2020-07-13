@@ -18,17 +18,16 @@ run this query:
 {
   user(id:"1"){
     name
+    address{
+        postCode
+    }
     basket {
       products{
         sku
         name
         description
         price
-      }
-      user {
-        id
-        name
-      }
+      }      
     }
   }
 }
@@ -41,6 +40,9 @@ You should get back:
   "data": {
     "user": {
       "name": "Ada Lovelace",
+      "address": {
+        "postCode": "BL1 6DD"
+      },
       "basket": {
         "products": [
           {
@@ -55,13 +57,10 @@ You should get back:
             "description": "A mouse.  For moving a cursor. And clicking.  It's white",
             "price": 5.99
           }
-        ],
-        "user": {
-          "id": "1",
-          "name": "Ada Lovelace"
-        }
+        ]
       }
     }
+  }
 ```
 
 marvel at the data coming from each service and being seamlessly joined together.
