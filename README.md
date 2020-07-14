@@ -16,19 +16,18 @@ run this query:
 
 ```javascript
 {
-  user(id:"1"){
+  User: userByUsername(username:"@ada"){
     name
-    address{
-        postCode
+    address {
+      postCode
     }
     basket {
-      products{
-        sku
+      products {
         name
         description
         price
-      }      
-    }
+      }
+    }    
   }
 }
 ```
@@ -36,9 +35,9 @@ run this query:
 You should get back:
 
 ```javascript
-{
+ {
   "data": {
-    "user": {
+    "User": {
       "name": "Ada Lovelace",
       "address": {
         "postCode": "BL1 6DD"
@@ -46,13 +45,11 @@ You should get back:
       "basket": {
         "products": [
           {
-            "sku": "Keyboard-White",
             "name": "White Keyboard",
             "description": "A keyboard.  For typing on and that.  It's white",
             "price": 10.99
           },
           {
-            "sku": "Mouse-White",
             "name": "White Mouse",
             "description": "A mouse.  For moving a cursor. And clicking.  It's white",
             "price": 5.99
