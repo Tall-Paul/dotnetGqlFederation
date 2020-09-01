@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FWS8ZuamhFd2ml7hlvo0WKEM88WJZnKrAZy31M9Q8VEOcD/2epYyEzvVUzAOo3vCZ1LJMPH3iFcM8U7UiueHgw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pberry\\development\\GraphQLFederationDemo\\GraphQLInventoryService\\GraphQLInventoryService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pberry\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

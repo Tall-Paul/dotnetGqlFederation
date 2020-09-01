@@ -11,5 +11,7 @@ namespace GraphQLBasketService.Models
         public string id { get; set; }
         public Product[] Products { get; set; }
         public User User { get; set; }
+
+        public String subtotal {get; set;} 
     }
 }

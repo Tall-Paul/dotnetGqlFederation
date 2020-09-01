@@ -1,0 +1,56 @@
+
+type Address {
+    id: ID!
+    address1: String
+    address2: String
+    address3: String
+    postCode: String
+  }
+  
+  type Basket {
+    id: ID!
+    user: User
+    products: [Product]
+  }
+
+  type User {
+    id: ID!
+    name: String
+    username: String
+    basket: Basket
+    address: Address
+  }
+
+  
+  type Product {
+    id: ID!
+    sku: String
+    name: String
+    description: String
+    price: Decimal
+  }
+  
+  type Query {
+    userById(id: ID!): User
+    userByUsername(username: String!): User
+    getProduct(id: String): Product
+    products: [Product]
+    basket(id: ID!): Basket
+    address(id: ID!): Address
+  }
+  
+  type Mutation {
+    addAddress(address: AddressInput): Address
+  }
+
+  input AddressInput {
+    address1: String
+    address2: String
+    address3: String
+    postCode: String
+  }
+  
+
+  
+  
+  

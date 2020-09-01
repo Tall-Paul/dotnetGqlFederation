@@ -58,6 +58,17 @@ namespace GraphQLAddressService
                         extend type Query {
                             Address(Id: ID!): Address
                         }
+
+                        extend type Mutation {
+                            addAddress(address: AddressInput): Address
+                        }
+
+                        input AddressInput {
+                            address1: String
+                            address2: String
+                            address3: String
+                            postCode: String
+                        }
                     
                         type Address @key(fields: ""id"") {
                             id: ID!

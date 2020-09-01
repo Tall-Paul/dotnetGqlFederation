@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using GraphQLBasketService.Models;
+using GraphQLBasketService.Types;
 
 namespace GraphQLBasketService
 {
@@ -15,22 +16,8 @@ namespace GraphQLBasketService
                 id = "1",
                 Basket = new Basket
                 {
-                    id = "1",
-                Products = new[]  {
-                    new Product
-                    {
-                        id = "1"
-                    },
-                    new Product
-                    {
-                        id = "3"
-                    },
-                },
-                User =  new User
-                {
-                    id = "1"
+                    id = "1",               
                 }
-              }
             },
             new User
             {

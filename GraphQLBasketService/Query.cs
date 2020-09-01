@@ -30,6 +30,14 @@ namespace GraphQLBasketService
             });
         } 
 
+        [GraphQLMetadata("_entities")]
+        public Task<Basket> getEntities(Object Representations)
+        {
+            Console.WriteLine("here");
+            return _store.GetBasketById("1");
+            
+        }
+        
         [GraphQLMetadata("Basket")]
         public Task<Basket> Basket(String id)
         {

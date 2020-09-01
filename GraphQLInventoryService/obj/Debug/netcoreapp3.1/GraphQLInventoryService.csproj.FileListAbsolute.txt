@@ -1,0 +1,9 @@
+C:\Users\pberry\development\GraphQLFederationDemo\GraphQLInventoryService\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\pberry\development\GraphQLFederationDemo\GraphQLInventoryService\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\pberry\development\GraphQLFederationDemo\GraphQLInventoryService\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\pberry\development\GraphQLFederationDemo\GraphQLInventoryService\obj\Debug\netcoreapp3.1\GraphQLInventoryService.csprojAssemblyReference.cache
+C:\Users\pberry\development\GraphQLFederationDemo\GraphQLInventoryService\obj\Debug\netcoreapp3.1\GraphQLInventoryService.AssemblyInfoInputs.cache
+C:\Users\pberry\development\GraphQLFederationDemo\GraphQLInventoryService\obj\Debug\netcoreapp3.1\GraphQLInventoryService.AssemblyInfo.cs
+C:\Users\pberry\development\GraphQLFederationDemo\GraphQLInventoryService\obj\Debug\netcoreapp3.1\GraphQLInventoryService.RazorTargetAssemblyInfo.cache
+C:\Users\pberry\development\GraphQLFederationDemo\GraphQLInventoryService\obj\Debug\netcoreapp3.1\staticwebassets\GraphQLInventoryService.StaticWebAssets.Manifest.cache
+C:\Users\pberry\development\GraphQLFederationDemo\GraphQLInventoryService\obj\Debug\netcoreapp3.1\staticwebassets\GraphQLInventoryService.StaticWebAssets.xml

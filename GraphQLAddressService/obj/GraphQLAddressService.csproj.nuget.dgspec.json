@@ -17,6 +17,7 @@
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
+          "C:\\Users\\pberry\\development\\GraphQLFederationDemo\\GraphQLAddressService\\NuGet.Config",
           "C:\\Users\\pberry\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
